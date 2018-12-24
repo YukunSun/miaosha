@@ -53,7 +53,7 @@
     -2.对于商户而言，本来就是为了活动拉流量人气的，卖不完还可以省一部分费用，但是活动还参与了，也就没有了任何影响
     -3.对网站而言，最重要的是体验，只要网站不崩溃，对用户而言没有任何影响
 #### [为什么redis数量会减少为负数]()  
-        //预见库存
+        //预减库存
         long stock = redisService.decr(GoodsKey.getMiaoshaGoodsStock,""+goodsId) ;
 		if(stock <0){
 	    localOverMap.put(goodsId, true);
